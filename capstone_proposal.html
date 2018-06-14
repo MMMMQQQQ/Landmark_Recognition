@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>capstone_proposal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1>Machine Learning Engineer Nanodegree</h1>
+
+<h2>Capstone Proposal</h2>
+
+<p>Gap Kim<br />
+June 6, 2018</p>
+
+<h2>Proposal</h2>
+
+<h3>Domain Background</h3>
+
+<p>Over the last years, deep learning methods have been shown to outperform previous state-of-the-art machine learning techniques in many fields such as visual, audio, medical, social, and sensor. In particular, object recognition has gained tremendous interest by engineers and scientists in artificial intelligence and computer vision. Deep learning allows computational models of multiple processing layers to learn and represent data with multiple levels of abstraction mimicking how the brain perceives and understands multimodal information, thus implicitly capturing intricate structures of large-scale data [<a href="https://www.hindawi.com/journals/cin/2018/7068349/">1</a>]. Among various methods developed in object recognition, Convolutional Neural Network (CNN) is of interest for this project. CNNs were inspired by the structure of a visual system and were shown to significantly outperform traditional machine learning approaches in computer vision and pattern recognition [<a href="https://scholar.google.com/scholar_lookup?title=Learning+deep+architectures+for+AI&amp;author=Y.+Bengio&amp;publication_year=2009">2</a>]. CNNs have been used in variety of fields, which includes but are not limited to object detection [<a href="https://ieeexplore.ieee.org/document/6909475/">3</a>], face recognition [<a href="https://ieeexplore.ieee.org/document/554195/">4</a>], and action/activity recognition [<a href="https://link.springer.com/article/10.1007%2Fs10618-017-0495-0">5</a>]. </p>
+
+<p>In this study, a deep learning model based on CNNs is proposed for Google Landmark Recognition Challenge from Kaggle [<a href="https://www.kaggle.com/c/landmark-recognition-challenge">6</a>]. A technology that can accurately predict landmark labels directly from image pixels can broadly benefit applications in various areas such as photo management, maps, aviation, and satellite images.</p>
+
+<h3>Problem Statement</h3>
+
+<p>One of great obstacles to landmark recognition research is the lack of large annotated datasets. Hence Google Landmark Recognition Competition presents the largest worldwide dataset to date and challenges to build models that recognize the correct landmarks from the test images. The Landmark recognition presents a dataset with a very large numbers of classes (15,000 classes), but the number of training examples per class may not be very large. This makes the problem different from image classification challenges like the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) where the aim is to recognize 1000 general object categories.</p>
+
+<h3>Datasets and Inputs</h3>
+
+<p>The original Landmark Recognition Challenge dataset provides two files, train.csv and test.csv. The training set images each depict exactly one landmark. Test images may depict no landmark, one landmark, or more than one landmark. Each image has a unique id (a hash) and each landmark has a unique id (an integer). Due to restrictions on distributing the actual  image files, the dataset contains a url for each image.</p>
+
+<p>The original number of images for training and test dataset are 1,225,029 and 117,703, respectively with a total of 14,951 unique landmark ids. Use of full dataset may require large storage capacity (in the order of hundred GB) and computational power not easily available to an individual. Therefore a subset of dataset will be used for this study. First, top 100 landmark ids most frequently appearing are identified among 14,951 landmark ids. Then, 2% of images from each of the 100 landmark ids are downloaded. The procedure is similar to stratified sampling applied to the top 100 frequent classes to preserve the ratio of images among the classes.</p>
+
+<p>Approximately 8100 images will be eventually used for the reduced dataset. This dataset is split into training, validation, and test dataset for building the CNN models.</p>
+
+<h3>Solution Statement</h3>
+
+<p>The CNN model will be built using the framework of TensorFlow with Keras library. The CNN will employ three main types of neural layers: (i) convolutional layers, (ii) pooling layers, and (iii) fully connected layers. The convolutional layer utilizes various filters to generate feature maps. The pooling layer reduces the spatial dimensions of the input volume and helps to alleviate overfitting problems. The fully connected layer eventually converts 2D feature maps into 1D feature vector and is forwarded into total number of landmark ids for classification. Regularization techniques such as dropout, batch normalization [<a href="https://arxiv.org/abs/1502.03167">7</a>], and data augmentation are considered for developing an optimal CNN model for the problem. Accuracy will be used as the model performance evaluation metric. </p>
+
+<h3>Benchmark Model</h3>
+
+<p>The size of the dataset is approximately 8100 images with 100 landmark ids. However, the frequency of the 100 landmarks appearing in the dataset varies significantly. In other words, the expected accuracy may vary depending on the selected test dataset. Thus the accuracy of the proposed benchmark model, given the test dataset, can be calculated as the following:</p>
+
+<p>(i) Given the test dataset and 100 unique landmark ids, the probability of correctly classifying a landmark id, $P(id)$ can be calculated as,</p>
+
+<p>$$
+P(id) = n_{id} / N
+$$</p>
+
+<p>where $n_{id}$ is the number of the landmark id in the test dataset, and and $N$ is the total number of images in the test dataset. For example, if landmark id = 99 appears 50 times in test dataset size of 800, $P(99) = 50/800$.</p>
+
+<p>(ii) The expected value of correct number of landmark id classified is:</p>
+
+<p>$$
+E(x) = \sum_{x=0}^{x=N} (x \cdot P(id(x)))
+$$</p>
+
+<p>(iii) Finally, the expected accuracy for correctly classifying the landmark id is:</p>
+
+<p>$$
+E(accuracy) = \frac{E(x)}{N}
+$$</p>
+
+<p>Given the test dataset, expected accuracy can be computed, which will be used as the benchmark model. Since there are 100 unique landmark ids, expected accuracy by random guessing will be very low. </p>
+
+<h3>Evaluation Metrics</h3>
+
+<p>The overall evaluation metric that will be used for the benchmark model and the solution model is accuracy. However, accuracy may suffer when the class distribution is imbalanced. Therefore, confusion matrix may be used to analyze the precision and recall of landmark ids that are particularly imbalanced.</p>
+
+<h3>Project Design</h3>
+
+<p>The project will take on a subset of dataset from Google Landmark Recognition Challenge. The competition challenges to build models that can recognize the correct landmark where the dataset contains a very large number of classes (~15,000 classes) but the number of training examples per class may not be very large.</p>
+
+<p>Due to computational limitation, a reduced dataset is proposed with 100 unique landmark ids in approximately 8,100 images. Stratified sampling is employed so that the ratios of images among the classes are preserved. A deep learning model utilizing the CNN will be built using the framework of TensorFlow with Keras library. The CNN model will employ three basic neural layers, convolutional, pooling and fully connected layers. To improve the accuracy and efficiency, regularization techniques such as dropout, batch normalization, and data augmentation will be considered when building the optimal CNN for the challenge. The batch normalization technique, which transforms mean activation close to 0 and the activation standard deviation close to 1, has shown to improve accuracy with fewer training steps in image recognition problems. Many times, landmark images may be rotated, take up only a portion of the whole image, and may be out of center. The data augmentation technique may help improve accuracy for such images. In addition, data augmentation strategy can help with those landmark ids with only small number of training images. The performance of CNN models will be compared with the accuracy computed for the benchmark model.</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

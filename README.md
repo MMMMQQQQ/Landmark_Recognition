@@ -9,13 +9,12 @@ The downloaded image files are not submitted due to file size limitation. If nee
 
 ## File Description
 - capstone_report.pdf : Final capstone project report
-- Landmark_Recognition-R8.html: Main Jupyter notebook code for the capstone project
-- Landmark_Recognition-R8.ipynb: Main Jupyter notebook for capstone project
+- Landmark_Recognition-R9.html: Main Jupyter notebook code for the capstone project
 - Landmark_Download.html: Jupyter notebook code for downloading landmark images
 - Move_files.html: Jupyter notebook code for moving downloaded images to validation and testing folders
 - train_sample.csv: Dataset for this project produced by main code. Reduced dataset from the original competition. 
 
-You can view the **Landmark_Recognition-R8.html** in HTML by [clicking here](http://htmlpreview.github.io/?https://github.com/gapkim/Landmark_Recognition/blob/master/Landmark_Recognition-R8.html).
+You can view the **Landmark_Recognition-R9.html** in HTML by [clicking here](http://htmlpreview.github.io/?https://github.com/gapkim/Landmark_Recognition/blob/master/Landmark_Recognition-R9.html).
 
 You can view the **Landmark_Download.html** in HTML by [clicking here](http://htmlpreview.github.io/?https://github.com/gapkim/Landmark_Recognition/blob/master/Landmark_Download.html).
 

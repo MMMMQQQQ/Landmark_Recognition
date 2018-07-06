@@ -8,7 +8,7 @@ The downloaded image files are not submitted due to file size limitation. If nee
 ** Python version: 3.6
 
 ## File Description
-- capstone_report.pdf : Final capstone project report
+- capstone_report_r1.pdf : Final capstone project report
 - Landmark_Recognition-R9.html: Main Jupyter notebook code for the capstone project
 - Landmark_Download.html: Jupyter notebook code for downloading landmark images
 - Move_files.html: Jupyter notebook code for moving downloaded images to validation and testing folders
